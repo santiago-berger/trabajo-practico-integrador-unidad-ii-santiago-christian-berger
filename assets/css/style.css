@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* apilar header, main y footer en columna */
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #2d2d2d;
+  background-color: #fafafa;
+}
+
+/* main ocupa todo el espacio libre entre header y footer */
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 4px solid #2a9d8f;          
+}
+
+header .navbar {
+  background-color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.07em; 
+  text-transform: uppercase;
+  padding: 1.1rem 14px; 
+  color: #3d3d3d;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2a9d8f;
+}
+
+.navbar-nav .nav-link.active {
+  color: #21867a;
+  font-weight: 700;
+}
+
+/* Hover del item */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #e8f5f3;
+  border-left-color: #2a9d8f;
+  color: #21867a; 
+}
+
+/* Hover para mostrar el menú desplegable en pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-nav .dropdown {
+    position: relative; /* necesario para posicionar el menu */
+  }
+  
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block; /* mostrar al hacer hover */
+    margin-top: 0;
+  }
+}
+
+footer {
+  background-color: #2c3e50;
+  border-top: 4px solid #2a9d8f;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  color: #b0bec5;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 0.88rem;
+}
