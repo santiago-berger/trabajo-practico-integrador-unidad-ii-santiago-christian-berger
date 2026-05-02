@@ -15,60 +15,76 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Institulo Politécnico Formosa</a>
+          <!-- Logo del Instituto -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo.png"
+              alt="Instituto Politécnico Formosa"
+              width="220"
+              class="img-fluid"
+            />
+          </a>
+          <!-- Botón para celular -->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-target="#navbarMenu"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
+          <!-- Menú -->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="index.html">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Información Institucional</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="institucional.html">Institucional</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
+              <!-- Dropdown -->
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link" href="carreras.html">Oferta Académica</a>
+                <!-- Botón mobile -->
+                <button
+                  class="nav-link d-lg-none text-start w-100"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Carreras
-                </a>
+                  Ver todas las carreras
+                </button>
+                <!-- Menú -->
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#">Química Industrial</a>
+                    <a class="dropdown-item" href="quimica.html"
+                      >Tecnicatura Superior en<br />
+                      Química Industrial</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="#">Mecatrónica</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Telecomunicaciones</a>
+                    <a class="dropdown-item" href="mecatronica.html"
+                      >Tecnicatura Superior en<br />
+                      Mecatrónica</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
-                      >Desarrollo de Software Multiplataforma</a
+                    <a class="dropdown-item" href="telecomunicaciones.html"
+                      >Tecnicatura Superior en<br />
+                      Telecomunicaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="software.html"
+                      >Tecnicatura Superior en Desarrollo<br />
+                      de Software Multiplataforma</a
                     >
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
