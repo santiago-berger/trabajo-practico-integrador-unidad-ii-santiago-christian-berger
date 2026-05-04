@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Instituto Politécnico Formosa</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contacto.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo.png"
+              alt="IPF"
+              width="220"
+              class="img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="institucional.html">Institucional</a>
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link" href="carreras.html">Oferta Académica</a>
+                <button
+                  class="nav-link d-lg-none text-start w-100"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ver todas las carreras
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="quimica.html"
+                      >Tecnicatura Superior en<br />Química Industrial</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mecatronica.html"
+                      >Tecnicatura Superior en<br />Mecatrónica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="telecomunicaciones.html"
+                      >Tecnicatura Superior en<br />Telecomunicaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="software.html"
+                      >Tecnicatura Superior en Desarrollo<br />de Software
+                      Multiplataforma</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Encabezado -->
+      <section class="page-header text-white text-center">
+        <div class="container py-4">
+          <h1 class="display-5 fw-bold mb-2">Contacto</h1>
+          <div
+            style="
+              width: 60px;
+              height: 3px;
+              background-color: #2a9d8f;
+              border-radius: 2px;
+              margin: 0 auto 16px;
+            "
+          ></div>
+          <p class="fs-5 opacity-75 mb-0">
+            Estamos para ayudarte — escribinos o visitanos
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección de formulario -->
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-7">
+              <h2 class="titulo-seccion fw-bold mb-4">
+                Formulario de Consulta
+              </h2>
+              <div
+                class="card border-0 shadow-sm p-4"
+                style="
+                  border-radius: 12px;
+                  border-top: 4px solid #2a9d8f !important;
+                "
+              >
+                <div class="mb-3">
+                  <label for="nombre" class="form-label fw-semibold"
+                    >Nombre completo</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Nombre y apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-semibold"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="tucorreo@gmail.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label fw-semibold"
+                    >Teléfono</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    placeholder="+54 370 400-0000"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="carrera" class="form-label fw-semibold"
+                    >Carrera de interés</label
+                  >
+                  <select class="form-select" id="carrera">
+                    <option selected value="">Seleccioná una opción</option>
+                    <option>Desarrollo de Software Multiplataforma</option>
+                    <option>Mecatrónica</option>
+                    <option>Química Industrial</option>
+                    <option>Telecomunicaciones</option>
+                    <option>Información general</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label for="mensaje" class="form-label fw-semibold"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    rows="4"
+                    placeholder="Escribí tu consulta acá"
+                  ></textarea>
+                </div>
+                <button type="button" class="btn-dark btn w-100 py-2">
+                  Enviar consulta
+                </button>
+              </div>
+            </div>
+
+            <!-- Datos de contacto -->
+            <div class="col-lg-5">
+              <h2 class="titulo-seccion fw-bold mb-4">Datos de Contacto</h2>
+
+              <!-- Tarjeta de datos -->
+              <div class="card-contacto p-4 mb-4">
+                <div class="fila-contacto">
+                  <div>
+                    <strong>Dirección</strong><br />
+                    Ruta Nac. 81 km. 1190<br />
+                    Formosa, Argentina
+                  </div>
+                </div>
+                <div class="fila-contacto">
+                  <div>
+                    <strong>Email</strong><br />
+                    <a href="mailto:info@ipf.edu.ar">info@ipf.edu.ar</a>
+                  </div>
+                </div>
+                <div class="fila-contacto">
+                  <div>
+                    <strong>WhatsApp</strong><br />
+                    <a href="https://wa.me/543704860530" target="_blank"
+                      >3704860530</a
+                    >
+                  </div>
+                </div>
+                <div class="fila-contacto mb-0">
+                  <div>
+                    <strong>Redes Sociales</strong><br />
+                    <a href="https://www.facebook.com/IPFormosa" target="_blank"
+                      >Facebook</a
+                    >
+                    ·
+                    <a
+                      href="https://www.instagram.com/ipformosa/"
+                      target="_blank"
+                      >Instagram</a
+                    >
+                    ·
+                    <a href="https://www.tiktok.com/@ipformosa" target="_blank"
+                      >TikTok</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tabla de horarios -->
+              <h5 class="fw-bold mb-3" style="color: #1a3a3a">
+                Horarios de Atención
+              </h5>
+              <div class="table-responsive shadow-sm rounded">
+                <table
+                  class="table table-bordered align-middle mb-0 text-center"
+                >
+                  <thead class="thead-teal">
+                    <tr>
+                      <th>Día</th>
+                      <th>Horario</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Lunes a Viernes</td>
+                      <td>09:00 - 17:00</td>
+                    </tr>
+                    <tr class="table-light">
+                      <td>Sábado y Domingo</td>
+                      <td>Cerrado</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección del mapa -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="titulo-seccion fw-bold text-center mb-4">Ubicación</h2>
+          <div
+            class="ratio ratio-16x9 shadow rounded overflow-hidden"
+            style="max-height: 420px"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.571389421303!2d-58.279799925378704!3d-26.080260458936177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945cb1005b21b355%3A0x36a052477a923c03!2sInstituto%20Polit%C3%A9cnico%20Formosa!5e0!3m2!1ses-419!2sar!4v1777672165894!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              title="Ubicación Instituto Politécnico Formosa"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="text-center">
+          &copy; 2026 Instituto Politécnico Formosa. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

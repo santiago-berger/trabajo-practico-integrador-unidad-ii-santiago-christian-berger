@@ -1,0 +1,75 @@
+.page-header {
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                    url("../img/fondo-cabecera.jpg");
+  background-size: cover;
+  background-position: center top;
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos de los titulos */
+.titulo-seccion {
+  color: #1a3a3a;
+}
+.titulo-seccion::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background-color: #2a9d8f;
+  border-radius: 2px;
+  margin: 8px auto 0;
+}
+
+/* Estilos de la tarjeta de contacto */
+.card-contacto {
+  background: linear-gradient(135deg, #0f2027, #21867a);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+}
+.card-contacto a {
+  color: #a8edea;
+  text-decoration: none;
+}
+.card-contacto a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.fila-contacto {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  margin-left: 30px;
+}
+
+/* Botón del formulario */
+.btn-teal {
+  background-color: #2a9d8f;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 10px 28px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.btn-teal:hover {
+  background-color: #21867a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Encabezado de tabla de horarios */
+.thead-teal th {
+  background-color: #2a9d8f;
+  color: #ffffff;
+}
+
+.fila-contacto .icono {
+  font-size: 1.5rem;
+  color: #a8edea; 
+  flex-shrink: 0;
+}
