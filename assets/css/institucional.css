@@ -1,0 +1,83 @@
+.page-header {
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                    url("../img/imagen aerea IPF.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos de los titulos */
+.titulo-seccion {
+  color: #1a3a3a;
+}
+.titulo-seccion::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background-color: #2a9d8f;
+  border-radius: 2px;
+  margin: 8px auto 0;
+}
+
+/* Estilos de las tarjetas de autoridades */
+.card-autoridad {
+  border: none;
+  border-top: 4px solid #2a9d8f;
+  border-radius: 10px;
+}
+.card-autoridad:hover {
+  box-shadow: 0 10px 24px rgba(42,157,143,0.18);
+}
+
+/* Estilos de las tarjetas de misión y visión */
+.card-mision {
+  border: none;
+  border-left: 5px solid #2a9d8f;
+  border-radius: 8px;
+  background-color: #f0faf8;
+}
+.card-vision {
+  border: none;
+  border-left: 5px solid #52b788;
+  border-radius: 8px;
+  background-color: #edf7f0;
+}
+
+/* Badge */
+.badge-anio {
+  display: inline-block;
+  background-color: #2a9d8f;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.item-timeline {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.autoridad-icono {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #2a9d8f;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
