@@ -1,0 +1,54 @@
+/* Estilos de la sección de bienvenida */
+.bienvenida {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../img/instituto.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 55vh;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 70vw;  
+  }
+}
+
+.divisor-bienvenida {
+  width: 60px;
+  height: 3px;
+  background-color: #2a9d8f; 
+  border-radius: 2px;
+}
+
+/* Contenedor principal: controla el ancho y el centrado */
+.carousel {
+  max-width: 80%;           /* Define el margen a los costados */
+  margin: 20px auto;        /* Centra el carrusel horizontalmente */
+  border-radius: 12px;    
+  overflow: hidden;         /* Obliga a la imagen a respetar los bordes */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+
+.carousel-item img { 
+  height: 500px; 
+  object-fit: cover;
+}
+
+.carousel-item { 
+  position: relative;
+}
+
+.carousel-item::before { 
+  content: ""; 
+  position: absolute; 
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+  
+.carousel-caption { 
+  z-index: 2;}
+  
+.carousel-caption h5,.carousel-caption p {
+   color: #fff; 
+   text-shadow: 0 2px 6px rgba(0,0,0,0.7);}
