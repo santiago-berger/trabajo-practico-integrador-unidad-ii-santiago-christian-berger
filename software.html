@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto Politécnico Formosa</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/carreras.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo del Instituto -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo.png"
+              alt="Instituto Politécnico Formosa"
+              width="220"
+              class="img-fluid"
+            />
+          </a>
+          <!-- Botón de hamburguesa para celular -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menú de navegación -->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="institucional.html">Institucional</a>
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link" href="carreras.html">Oferta Académica</a>
+                <!-- Botón del menú desplegable para celular -->
+                <button
+                  class="nav-link d-lg-none text-start w-100"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ver todas las carreras
+                </button>
+                <!-- Menú desplegable -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="quimica.html"
+                      >Tecnicatura Superior en<br />
+                      Química Industrial</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mecatronica.html"
+                      >Tecnicatura Superior en<br />
+                      Mecatrónica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="telecomunicaciones.html"
+                      >Tecnicatura Superior en<br />
+                      Telecomunicaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="software.html"
+                      >Tecnicatura Superior en Desarrollo<br />
+                      de Software Multiplataforma</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header text-white text-center">
+        <div class="container py-4">
+          <p class="mb-1 opacity-75 fst-italic">Tecnicatura Superior en</p>
+          <h1 class="display-5 fw-bold mb-2">
+            Desarrollo de Software Multiplataforma
+          </h1>
+          <div
+            style="
+              width: 60px;
+              height: 3px;
+              background-color: #2a9d8f;
+              border-radius: 2px;
+              margin: 0 auto 16px;
+            "
+          ></div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <!-- Carrusel de imágenes -->
+            <div class="col-lg-6">
+              <div
+                id="softwareCarousel"
+                class="carousel slide shadow rounded overflow-hidden mb-4"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#softwareCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#softwareCarousel"
+                    data-bs-slide-to="1"
+                    class=""
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#softwareCarousel"
+                    data-bs-slide-to="2"
+                    class=""
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#softwareCarousel"
+                    data-bs-slide-to="3"
+                    class=""
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#softwareCarousel"
+                    data-bs-slide-to="4"
+                    class=""
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="assets/img/software-1.jpg"
+                      class="d-block w-100"
+                      alt="Foto 1"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        max-height: 500px;
+                        object-fit: contain;
+                        background-color: #0f2027;
+                      "
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/img/software-2.jpg"
+                      class="d-block w-100"
+                      alt="Foto 2"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        max-height: 500px;
+                        object-fit: contain;
+                        background-color: #0f2027;
+                      "
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/img/software-3.jpg"
+                      class="d-block w-100"
+                      alt="Foto 3"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        max-height: 500px;
+                        object-fit: contain;
+                        background-color: #0f2027;
+                      "
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/img/software-4.jpg"
+                      class="d-block w-100"
+                      alt="Foto 4"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        max-height: 500px;
+                        object-fit: contain;
+                        background-color: #0f2027;
+                      "
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#softwareCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#softwareCarousel"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Perfil profesional -->
+            <div class="col-lg-6">
+              <h2 class="titulo-seccion fw-bold mb-3">Perfil Profesional</h2>
+              <p class="text-muted mb-4">
+                Un desarrollador puede desempeñarse en empresas de desarrollo de
+                software, startups tecnológicas áreas de innovación digital,
+                compañías de servicios informáticos, consultoras de sistemas, en
+                sectores como salud, educación, finanzas. entretenimiento y
+                comercio electrónico.
+              </p>
+
+              <!-- Ficha con datos clave -->
+              <div
+                class="card border-0 shadow-sm p-4 mb-4"
+                style="border-radius: 12px; background-color: #9ef7e5"
+              >
+                <div class="row g-3">
+                  <div class="col-12">
+                    <small class="text-muted text-uppercase fw-bold"
+                      >Título</small
+                    >
+                    <p class="fw-bold mb-0" style="color: #1a3a3a">
+                      Técnica/o Superior en Desarrollo de Software
+                      Multiplataforma
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <small class="text-muted text-uppercase fw-bold"
+                      >Duración</small
+                    >
+                    <p class="fw-bold mb-0" style="color: #1a3a3a">2 años</p>
+                  </div>
+                  <div class="col-6">
+                    <small class="text-muted text-uppercase fw-bold"
+                      >Modalidad</small
+                    >
+                    <p class="fw-bold mb-0" style="color: #1a3a3a">
+                      Presencial
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <small class="text-muted text-uppercase fw-bold"
+                      >Título Oficial</small
+                    >
+                    <p class="fw-bold mb-0" style="color: #1a3a3a">
+                      Validez Nacional
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contacto.html" class="btn-dark btn px-4"
+                >Consultá tu inscripción</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="text-center">
+          &copy; 2026 Instituto Politécnico Formosa. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

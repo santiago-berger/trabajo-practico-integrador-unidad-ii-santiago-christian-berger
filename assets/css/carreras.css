@@ -1,0 +1,33 @@
+.page-header {
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                    url("../img/fondo-carreras.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+}
+
+.card-carrera {
+  border: none;
+  border-radius: 10px;
+}
+
+.img-carrera {
+  width: 100%;
+  height: auto;    
+  object-fit: contain;
+  padding: 8px;
+}
+
+/* Estilos del badge de las carreras */
+
+.badge-carrera {
+  display: inline-block;
+  background-color: #e8f5f3;
+  color: #21867a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
