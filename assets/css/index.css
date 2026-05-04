@@ -7,12 +7,6 @@
   min-height: 55vh;
 }
 
-@media (max-width: 576px) {
-  .hero {
-    min-height: 70vw;  
-  }
-}
-
 .divisor-bienvenida {
   width: 60px;
   height: 3px;
@@ -20,7 +14,8 @@
   border-radius: 2px;
 }
 
-/* Contenedor principal: controla el ancho y el centrado */
+/* Estilos del carrusel de imágenes */
+
 .carousel {
   max-width: 80%;           /* Define el margen a los costados */
   margin: 20px auto;        /* Centra el carrusel horizontalmente */
@@ -52,3 +47,44 @@
 .carousel-caption h5,.carousel-caption p {
    color: #fff; 
    text-shadow: 0 2px 6px rgba(0,0,0,0.7);}
+
+/* Estilos de los titulos */
+
+.titulo-seccion {
+  color: #1a3a3a;
+}
+.titulo-seccion::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background-color: #2a9d8f;
+  border-radius: 2px;
+  margin: 8px auto 0;
+}
+
+.card-carrera {
+  border: none;
+  border-radius: 10px;
+}
+
+.img-carrera {
+  width: 100%;
+  height: auto;    
+  object-fit: contain;
+  padding: 8px;
+}
+
+/* Estilos del badge de las carreras */
+
+.badge-carrera {
+  display: inline-block;
+  background-color: #e8f5f3;
+  color: #21867a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+
