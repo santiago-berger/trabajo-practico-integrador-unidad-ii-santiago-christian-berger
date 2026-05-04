@@ -1,0 +1,9 @@
+.page-header {
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                    url("../img/fondo-carreras.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+}
